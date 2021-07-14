@@ -168,10 +168,41 @@ app {
     }
 
 
+
+
  h1, h2, h3 {
      color: darkred;
-     background-color: darkblue;
+    
  }
+
+.button {
+    background-color: darkred;
+    color: white;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    display: block;
+    margin: 20px;
+}
+
+    .button:hover {
+        background-color: white;
+        color: darkred;
+    }
+
+.link {
+    border-bottom: 5px solid wheat;
+    font-size: larger;
+}
+
+    .link:hover {
+        color: orangered;
+    }
+
+img {
+    border: 2px solid darkred;
+    border-radius: 10px;
+    margin: 10px;
+}
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {
         display: none;
