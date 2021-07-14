@@ -1,0 +1,46 @@
+﻿@page "/"
+<style type="text/css">
+    h1, h2, h3 {
+        color: darkred;
+    }
+
+    .button {
+        background-color: darkred;
+        color: white;
+        border: 1px solid wheat;
+        border-radius: 10px;
+        display: block;
+        margin: 20px;
+    }
+
+        .button:hover {
+            background-color: white;
+            color: darkred;
+        }
+
+    .link {
+        color: darkred;
+        border-bottom: 5px solid wheat;
+        font-size: larger;
+    }
+
+        .link:hover {
+            color: orangered;
+        }
+
+    img {
+        border: 2px solid darkred;
+        border-radius: 10px;
+        margin: 10px;
+    }
+</style>
+<h1>DDSoft vzw presenteerd:</h1>
+<img src="logo.png"/>
+<h2>Ik verveel mij...</h2>
+<div id="content">
+    @ContentToShow
+</div>
+<button class="button" @onclick="Next">En nu...</button>
+<p>
+    <a class="link" href="https://www.trooper.be/ddsoft">Verken Trooper!</a>
+</p>
