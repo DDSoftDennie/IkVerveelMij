@@ -1,0 +1,10 @@
+﻿@foreach(var t in @TalksToShow)
+{
+	<div>
+		<h2>@t.Date - @t.Title</h2>
+		<p>
+			<strong>@t.Event.Name // @t.Event.Location</strong><br/>
+			@t.Event.DateFrom - @t.Event.DateTo
+		</p>
+	</div>
+}
