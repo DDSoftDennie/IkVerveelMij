@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using IkVerveelMij.Model;
 
-namespace IkVerveelMij.Model
+
+namespace IkVerveelMij.Services
 {
-    public static class Talks
+    public class HardCodedTalksService : ITalksService
     {
-        private static List<Talk> _Talks = new List<Talk>()
+        private static List<Talk> talks = new List<Talk>()
         {
             new Talk{
                      Date = new DateTime(2021,10,29),
@@ -18,7 +18,8 @@ namespace IkVerveelMij.Model
                         DateTo = new DateTime(2021,10,30),
                         isSpeaking = true,
                         Name = "Azure Community Conference",
-                        Location = "Virtual"
+                        Location = "Virtual",
+                        Website = "https://azconf.dev"
                      }
             },
             new Talk{
@@ -30,20 +31,19 @@ namespace IkVerveelMij.Model
                         DateTo = new DateTime(2021,11,19),
                         isSpeaking = true,
                         Name = "Build Stuff",
-                        Location = "Vilnius Lithuania"
+                        Location = "Vilnius Lithuania",
+                        Website = "https://www.buildstuff.events/travel-tips"
+
                     },
 
             }
         };
 
-        public static List<Talk> GetAllTalks => _Talks;
 
-        public static int Count = _Talks.Count;
+        public int Count() => talks.Count;
 
-        public static Talk GetTalk(int count)
-        {
-            return _Talks[count];
-        }
+        public IEnumerable<Talk> GetAllTalks() => talks;
 
+        public Talk GetTalk(int count) => talks[count];
     }
 }

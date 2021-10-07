@@ -1,0 +1,21 @@
+﻿@page "/Talks"
+@using IkVerveelMij.Model
+@using IkVerveelMij.Services
+@inject ITalksService talksService
+
+<h1>Talks</h1>
+@foreach(var t in talksService.GetAllTalks())
+{
+	<div>
+		<h2>@t.Date.ToShortDateString() - @t.Title</h2>
+		<p>
+			<strong>@t.Event.Name // @t.Event.Location</strong><br/>
+			@t.Event.DateFrom.ToShortDateString() - @t.Event.DateTo.ToShortDateString() - 
+			<a href="@t.Event.Website">Website</a>
+		</p>
+	</div>
+}
+
+@code {
+	
+}
