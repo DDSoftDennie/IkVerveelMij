@@ -1,0 +1,35 @@
+﻿@page "/qr"
+@inject NavigationManager nav
+
+<h1>QR Fun</h1>
+	@if(name != "")
+	{
+		<p>
+			Welkom @name! 
+		</p>
+	}
+
+
+
+<div class="@color">
+@color
+</div>
+
+@code {
+	string color = "";
+	string name = "";
+
+	protected override void OnInitialized()
+	{
+		var uri = nav.ToAbsoluteUri(nav.Uri);
+
+		color = nav.ExtractQueryStringByKey<string>("color");
+		name = nav.ExtractQueryStringByKey<string>("name");
+
+
+		if(color !="green" && color !="red")
+		{
+			color = "";
+		}
+	}
+}

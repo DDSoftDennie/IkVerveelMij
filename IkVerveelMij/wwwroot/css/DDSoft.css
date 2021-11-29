@@ -148,6 +148,18 @@ app {
     vertical-align:top;
 }
 
+
+.red{
+    background-color: red;
+    height: 250px;
+    width: 250px;
+}
+
+.green {
+    background-color: red;
+    height: 250px;
+    width: 250px;
+}
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
