@@ -2,18 +2,19 @@
 @inject NavigationManager nav
 
 <h1>QR Fun</h1>
+
+<div class="badge">
+	<div class="@color">
+		<br />
+	</div>
 	@if(name != "")
 	{
-		<p>
-			Welkom @name! 
+		<p class="name">
+		 @name 
 		</p>
 	}
-
-
-
-<div class="@color">
-@color
 </div>
+
 
 @code {
 	string color = "";

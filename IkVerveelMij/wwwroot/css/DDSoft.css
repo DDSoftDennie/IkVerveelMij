@@ -148,6 +148,13 @@ app {
     vertical-align:top;
 }
 
+.badge{
+    display: block;
+    height: 350px;
+    width: 260px;
+    border: 2px solid black;
+    align-content: center;
+}
 
 .red{
     background-color: red;
@@ -155,10 +162,17 @@ app {
     width: 250px;
 }
 
-.green {
-    background-color: red;
+.green{
+    background-color: green;
     height: 250px;
     width: 250px;
+}
+
+.name{
+    display: block;
+    width: 250px;
+    text-align: center;
+    font-weight: bolder;
 }
 #blazor-error-ui {
     background: lightyellow;
