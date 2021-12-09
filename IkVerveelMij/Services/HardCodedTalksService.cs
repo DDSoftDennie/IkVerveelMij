@@ -66,6 +66,20 @@ namespace IkVerveelMij.Services
             },
             new Talk
             {
+                Date = new DateTime(2021,12,9),
+                Title = "Autism in Tech",
+                Event = new Event
+                {
+                    DateFrom = new DateTime(2021,12,8),
+                    DateTo = new DateTime(2021,12,9),
+                    isSpeaking = true,
+                    Name = "JavaZone",
+                    Location = "Moved Online...",
+                    Website = "https://www.javazone.no"
+                }
+            },
+            new Talk
+            {
                 Date = new DateTime(2021,12,15),
                 Title = "The Scary Truth about Labels",
                 Event = new Event
