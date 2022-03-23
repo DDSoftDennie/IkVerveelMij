@@ -1,0 +1,17 @@
+﻿@using IkVerveelMij.Model
+
+	<div>
+		<h2>@Talk.Date.ToShortDateString() - @Talk.Title</h2>
+		<p>
+			<strong>@Talk.Event.Name // @Talk.Event.Location</strong><br/>
+			<strong>From:</strong> @Talk.Event.DateFrom.ToShortDateString() <strong>Until:</strong> @Talk.Event.DateTo.ToShortDateString() // 
+			<a href="@Talk.Event.Website">Website</a>
+		</p>
+	</div>
+
+@code
+{
+	[Parameter]
+	public Talk Talk { get; set; }
+
+}

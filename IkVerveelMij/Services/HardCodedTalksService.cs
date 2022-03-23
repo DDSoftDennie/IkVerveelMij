@@ -134,6 +134,34 @@ namespace IkVerveelMij.Services
                     Website = "https://www.javaland.eu"
                 }
             },
+              new Talk
+            {
+                Date = new DateTime(2022,3,23),
+                Title = "Autism, Teams & Socials",
+                Event = new Event
+                {
+                    DateFrom = new DateTime(2022,3,23),
+                    DateTo = new DateTime(2022,3,23),
+                    isSpeaking = true,
+                    Name = "Teams Nation",
+                    Location = "Online",
+                    Website = "https://www.teamsnation.rocks"
+                }
+            },
+              new Talk
+            {
+                Date = new DateTime(2022,4,29),
+                Title = "Blazing Acccesibility Basics",
+                Event = new Event
+                {
+                    DateFrom = new DateTime(2022,4,27),
+                    DateTo = new DateTime(2022,4,29),
+                    isSpeaking = true,
+                    Name = "NDC Porto",
+                    Location = "Porto, Portugal",
+                    Website = "https://www.ndcporto.com"
+                }
+            },
             new Talk
             {
                 Date = new DateTime(2022,6,1),
@@ -146,6 +174,20 @@ namespace IkVerveelMij.Services
                     Name = "Scottish Summit",
                     Location = "Glasgow, Scotland",
                     Website = "https://scottishsummit.com"
+                }
+            },
+              new Talk
+            {
+                Date = new DateTime(2022,6,1),
+                Title = "TBA",
+                Event = new Event
+                {
+                    DateFrom = new DateTime(2022,6,1),
+                    DateTo = new DateTime(2022,6,1),
+                    isSpeaking = true,
+                    Name = "WeAreDevelopers World Congress",
+                    Location = "Berlin, Germany",
+                    Website = "https://www.wearedevelopers.com/world-congress#/"
                 }
             }
 

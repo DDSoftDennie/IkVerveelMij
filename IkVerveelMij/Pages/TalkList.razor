@@ -5,14 +5,7 @@
 <h3>@Title</h3>
 @foreach(var t in talksService.GetAllTalks())
 {
-	<div>
-		<h2>@t.Date.ToShortDateString() - @t.Title</h2>
-		<p>
-			<strong>@t.Event.Name // @t.Event.Location</strong><br/>
-			@t.Event.DateFrom.ToShortDateString() - @t.Event.DateTo.ToShortDateString() - 
-			<a href="@t.Event.Website">Website</a>
-		</p>
-	</div>
+	<SingleTalk Talk="@t"/>
 }
 
 @code{
