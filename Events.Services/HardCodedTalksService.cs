@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using IkVerveelMij.Model;
+﻿using Events.Model;
 
 
-namespace IkVerveelMij.Services
+namespace Events.Services
 {
     public class HardCodedTalksService : ITalksService
     {

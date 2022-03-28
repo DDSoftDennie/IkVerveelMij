@@ -1,7 +1,4 @@
-﻿@using IkVerveelMij.Model
-@using IkVerveelMij.Services
-@inject ITalksService talksService
-
+﻿@inject ITalksService talksService
 <h3>@Title</h3>
 @foreach(var t in talksService.GetAllTalks())
 {

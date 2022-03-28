@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using IkVerveelMij.Model;
-
-namespace IkVerveelMij.Services
+﻿using Events.Model;
+namespace Events.Services
 {
     public class TalksService : ITalksService
     {
