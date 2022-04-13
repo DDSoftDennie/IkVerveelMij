@@ -1,8 +1,9 @@
 ﻿@page "/Talks"
-
+@inject ITalksService talksService
 <h1>Talks</h1>
-<TalkList Title="Here are my talks"/>
+<TalkList Title="Here are my talks" TitleHeading="HType.H2" TalkHeading="HType.H3" Talks = "@talks"/>
 
 @code {
-	
+	public List<Talk> talks => talksService.GetAllTalks().ToList();
+
 }
