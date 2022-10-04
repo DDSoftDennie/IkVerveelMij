@@ -26,8 +26,4 @@
     <Folder Include="wwwroot\sample-data\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Events\Events.Razor\Events.Razor.csproj" />
-  </ItemGroup>
-
 </Project>

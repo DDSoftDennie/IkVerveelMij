@@ -1,4 +1,3 @@
-using Events.Services;
 using IkVerveelMij.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,7 +14,6 @@ namespace IkVerveelMij
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-            builder.Services.AddSingleton<ITalksService, HardCodedTalksService>();
             builder.Services.AddSingleton<IContentService, HardCodedContentService>();
             await builder.Build().RunAsync();
         }
